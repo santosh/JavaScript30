@@ -1,0 +1,42 @@
+body {
+  background: #eee;
+  font-size: 16px;
+  line-height: 1.35;
+  font-family: Lato, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: .5rem;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+@media (min-width: 600px) {
+  main {
+    width: 400px;
+  }
+}
+
+h1 {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: Roboto, sans-serif;
+}
+
+ul {
+  margin-top: 0.5rem;
+  list-style: none;
+}
+
+li {
+  font-family: Mali, cursive;
+}
+
