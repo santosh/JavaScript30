@@ -1,6 +1,7 @@
 const inputs = document.querySelectorAll('.controls input');
 
 function handleUpdate() {
+  // dataset will have 'data-' attributes from the element
   const suffix = this.dataset.sizing || '';
   document.documentElement.style.setProperty(
     `--${this.name}`,
