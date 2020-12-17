@@ -1,4 +1,6 @@
 function removeTransition(e) {
+  // there can be more than one transition going on, 
+  // we want only one, the transform transition
   if (e.propertyName !== 'transform') return;
   this.classList.remove('playing');
 }
@@ -18,4 +20,6 @@ function playSound(e) {
 window.addEventListener('keydown', playSound);
 
 const keys = document.querySelectorAll('.key');
+// When the CSS transition ends, we want to remove 'playing' class from it
+// otherwise the key's UI will be stuck at .playing state
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
