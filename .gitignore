@@ -44,6 +44,7 @@ build/Release
 
 # Dependency directories
 webcam/node_modules/
+speech-recognition/node_modules/
 jspm_packages/
 
 # TypeScript v1 declaration files
